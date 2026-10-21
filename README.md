@@ -28,7 +28,7 @@ A high-performance Discord audit bot designed for deep forensic investigations o
 ## 📁 Project Structure
 
 ```text
-roblox-dossier-bot/
+Roblox-Dossier-Bot/
 ├── config.py          # Configuration loader & constants
 ├── roblox_api.py      # Roblox & Rolimons network scrapers
 ├── alt_check.py       # Algorithmic risk & alt-likelihood engine
@@ -36,7 +36,8 @@ roblox-dossier-bot/
 ├── bot.py             # Bot initialization & slash commands
 ├── requirements.txt   # Python package dependencies
 ├── run.bat            # One-click Windows runner
-└── .env.example       # Environment template
+├── LICENSE            # License terms
+└── README.md          # Project documentation
 ```
 
 ---
@@ -51,12 +52,12 @@ roblox-dossier-bot/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/roblox-dossier-bot.git
-cd roblox-dossier-bot
+git clone https://github.com/Weroxin/Roblox-Dossier-Bot.git
+cd Roblox-Dossier-Bot
 ```
 
 ### Step 2: Configure Your Bot Token
-Create a file named `.env` in the root folder (or rename `.env.example` to `.env`):
+Create a file named `.env` in the root folder:
 ```text
 DISCORD_BOT_TOKEN=your_bot_token_here
 ```
@@ -107,7 +108,7 @@ When generating your bot invite URL in the **OAuth2 -> URL Generator** tab:
 - **The command does not appear when typing `/`:**
   - Global slash commands can take a moment to register. Press `Ctrl + R` (or `Cmd + R` on Mac) to reload your Discord client.
 - **`AttributeError: 'NoneType' object has no attribute 'is_finished'`:**
-  - Make sure you are using the updated `ui_views.py` file with the view check included.
+  - Ensure you are using the latest `ui_views.py` from the repository with the interaction view guard included.
 
 ---
 
